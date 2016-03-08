@@ -1,0 +1,250 @@
+
+\documentclass[12pt,twoside]{reedthesis}
+\usepackage{graphicx,latexsym} 
+\usepackage{amssymb,amsthm,amsmath}
+\usepackage{longtable,booktabs,setspace} 
+\usepackage[hyphens]{url}
+\usepackage{rotating}
+\usepackage{natbib}
+\usepackage{color}
+
+%\title{A Book Report}
+%\author{Nicole Ezell}
+%\date{May 2016}
+%\division{Mathematics and Natural Sciences}
+%\advisor{Anna Ritz}
+%\department{Biology}
+
+\setlength{\parskip}{0pt}
+
+
+%% The fun begins:
+\begin{document}
+
+%  \maketitle
+%  \frontmatter % this stuff will be roman-numbered
+%  \pagestyle{empty} % this removes page numbers from the frontmatter
+
+%% Acknowledgements (Acceptable American spelling) are optional
+%% So are Acknowledgments (proper English spelling)
+%    \chapter*{Acknowledgements}
+%	I want to thank a few people.
+%
+%% The preface is optional
+%% To remove it, comment it out or delete it.
+%    \chapter*{Preface}
+%	This is an example of a thesis setup to use the reed thesis document class.
+%
+%    \tableofcontents
+%% if you want a list of tables, optional
+%    \listoftables
+%% if you want a list of figures, also optional
+%    \listoffigures
+%
+%% The abstract is not required if you're writing a creative thesis (but aren't they all?)
+%% If your abstract is longer than a page, there may be a formatting issue.
+%    \chapter*{Abstract}
+%	The preface pretty much says it all.
+%	
+%	\chapter*{Dedication}
+%	You can have a dedication here if you wish.
+%
+  \mainmatter % here the regular arabic numbering starts
+  \pagestyle{fancyplain} % turns page numbering back on
+%
+%%The \introduction command is provided as a convenience.
+%%if you want special chapter formatting, you'll probably want to avoid using it altogether
+
+    \chapter*{Introduction}
+         \addcontentsline{toc}{chapter}{Introduction}
+	\chaptermark{Introduction}
+	\markboth{Introduction}{Introduction}
+	% The three lines above are to make sure that the headers are right, that the intro gets included in the table of contents, and that it doesn't get numbered 1 so that chapter one is 1.
+	
+%    	Hallucinations and delusions that result from schizophrenia are often impossible to tell apart from reality, for the person experiencing them. As absurd as it is to listen to accounts of acute psychotic episodes, it can't be overemphasized how much the person experiencing psychoses is thoroughly and completely experiencing what they're describing. And in most cases, they believe it, too. The encounter with someone experiencing a version of reality in stark contrast to your own can be downright terrifying, both for a person going through an acute psychotic attack and for a neurotypical person listening to them talk about it. Hard enough is living with the knowledge that ghosts are stalking you, even harder is living with it and having no one believe you. Hallucinations that result from acute psychosis are often indistinguishable from the reality perceived by others, pushing people away from their friends, families, and workplace, and can result in total social isolation. Stigmatization makes this disease particularly debilitating. 
+	Schizophrenia (SCZ) is a psychiatric illness characterized by persistent delusional thought, hallucinations, cognitive disruption, dampened emotional expression, and reduced social engagement (American Psychiatric Association, 2013). Approximately 1\% of Americans are living with schizophrenia (NIMH, 2015). This has huge social and economic ramifications: while groups across all demographics are at equal risk of developing the disorder, about 10\% of people living with schizophrenia are houseless, comprising 1/3 to 1/2 of the houseless population (SARDAA, 2015). It is highly stigmatized and poorly characterized.
+	
+	\section{What does schizophrenia look like?}
+	Most of the American public's perceptions of schizophrenia are centered around so-called \textit{positive symptoms}, aspects of disrupted thought characterized by hallucinations, disrupted speech, grand delusions, and paranoia. These positive symptoms are attributable to overactive brain activity in the nucleus accumbens, an area of the brain associated with aversion, motivation, and reward, among others. Hallucinations are generally the symptom most stereotypically associated with schizophrenia. Frequently bizarre, most people without schizophrenia find this symptom peculiar and alienating. Generally attributed to the overactivity of neurons, hallucinations are relatively well-controlled by antipsychotic medication. Often, they emerge as a series of acute attacks, but many of patients only experience a single episode. These attacks can last as short as a couple of weeks or as long as a few years. 
+	
+	Grand delusions is another symptom that many non-affected individuals think of when they think of schizophrenia. These delusions often manifest as patients believing that they are a deity or a messiah, that they are able to control large workings of society, or other beliefs along this vein. Often these are coupled with paranoia, which frequently appears as people believing that radio and television broadcasts are speaking directly to them, or that they are being constantly surveyed by the government. The similarity of these motifs is attributable to popular culture; patients not in Western societies have completely different types of hallucinations and delusions, although present similar symptoms. 
+	
+	Disrupted speech patterns in schizophrenia are recognized to mirror internal disrupted neurological processes. Speech is generally accepted to mirror thought, and the scattered, barely associated speech patterns of some people with schizophrenia are recognized as reflecting underlying cognitive processes that also bounce too quickly between areas of association. A quote of a patient from 1950, frequently cited in texts on schizophrenia, is a good example of a cognitive symptom referred to as \textit{loose associations}: \begin{quote}My last teacher in that subject was Professor A. He was a man with black eyes. I also like black eyes. There are also blue and gray eyes and other sorts too. I have heard it said that snakes have green eyes. All people have eyes. (Blueler, 1950).\end{quote}
+	
+	 However, schizophrenia is also associated with a decrease in activity in the prefrontal cortex, associated with complex cognitive function, social behavior, and decision making. This causes the \textit{negative symptoms} of schizophrenia, less known but often just as debilitating. These symptoms are characterized by social withdrawal, depression, cognitive disruption, and "flat" or "blunted" affect. They are less visible than positive symptoms, partly due to the literal withdrawal of someone with schizophrenia from public places, and partly due to the less-stigmatized and more easily hidden nature of depression and cognitive disruption. Unlike acute psychotic episodes, many of the negative symptoms persist throughout the life of the patient. 
+	
+	Negative symptoms are responsible for most of the loss of quality of life experience by people with schizophrenia. Social withdrawal makes developing careers and relationships extremely difficult, while cognitive disruption makes tasks more difficult for people. Flat affect, coupled with the positive symptom of disrupted speech, disrupts communication, which can prevent others from empathizing with the affected individual and hamper the development of strong relationships. Often overlooked, the inability to communicate one's thoughts and feelings is one of the more frustrating and difficult aspects of this disease. fMRI studies and patient reports show that most people with a flattened affect do not stop feeling a wide range of emotions, but become unable to express them to other people, alienating them from participating in their community.
+	
+	\section{History of Diagnoses and Treatment}
+	The existence of schizophrenia in pre-modern times is questionable. While ancient accounts of demons and hallucinations are fairly common, it is impossible to say if those behaviors could be attributable to the physiological disruptions explored here. Late 19th-century psychiatrists labelled similar symptoms under the term "dementia praecox," believing schizophrenia to be an immediately post-pubescent onset of dementia. It wasn't until 1908 that psychiatrist Eugen Bleuler coined the term "schizophrenia," coming from the Greek roots schizein ($\sigma \chi \iota \zeta \epsilon \nu$, "to split"), and phr\=en, phren- ($\phi \rho \eta \nu$, $\phi \rho \epsilon \nu$-, "mind"), as he observed some patients improving after the initial psychotic episode and not continuously declining, as in cases of dementia (Kuhn, 2004). 
+	
+	More relevantly, the advent of psychopharmacology in the 1950s began the first attempts at treating schizophrenia using medication. Chlorpromazine was the first discovered antipsychotic medication, followed by haloperidol and fluphenazine, among others. Chlorpromazine was stumbled upon during a search for an antihistamine, and its clinical relevance to psychoses was (add more) The relatively accidental discovery of this family of medication shaped much of early research into the physiology behind schizophrenia, as they had already been proven to be effective antipsychotics, so studies focused on their mechanism of action in an attempt to discover the underlying pathophysiology of schizophrenia (Howes 2015). This was discovered to be a receptor that also binds dopamine, so was initially labeled the anti-psychotic/dopamine receptor, a member of a family of dopamine receptors. The particular one that haloperidol acts on is now denoted D2. 
+		
+	Something something history of mental institutions? 
+	Reagan-era closing of mental hospitals? 
+	Now, the hospital stay is much shorter, and long-term inpatient treatment rare. Patients that respond well to antipsychotics can now receive long-acting intramuscular doses in lieu of taking a daily pill. However, the medical community has recently begun to realize that antipsychotics do little to overall improve the quality of life of folks with schizophrenia, and recent therapies place much more emphasis on talk therapy strategies such as cognitive behavioral therapy, as well as tasks to improve cognition. 
+	%Epidemiological studies show no overall "functional recovery" for patients on antipsychotics, with no increase in lifespan or employment or housing rate over a long term \color{red}(Insell, 2010 check on this!!)\color{black}. 
+	
+	\section{Pharmacology} 
+	A type-2 dopamine receptor, denoted as D2, was discovered in 1975 the primary mechanism of action of antipsychotics (Madras, 2013).  
+	All current antipsychotics on the market are thought to work by blocking dopamine receptors in the mesolimbic dopamine system, decreasing neural activity thought to be associated with psychosis. First-generation antipsychotics are known to bind to both D1 and D2 receptors, however, they have a much higher affinity for the latter. Theoretically D1 receptors are more implicated in active psychoses, however, selectively blocking them has no therapeutic effect. This paradox is 
+	Evidence exists that D2 blockade inhibits D1 activity, both in the human model of the efficacy of D2-selective antipsychotics in reducing psychosis and in a similar mouse model. 
+	(Perhaps striatal cholinergic interneurons, the neurons that express D2 receptors, control D1 feedback mechanisms? something something GABA??)
+	
+	This first generation of antipsychotic medication is currently referred to as consisting of "typical" antipsychotics, as compared to more current "atypical" antipsychotics, designed to reduce side-effects associated with long term use. However, recent studies suggest that the often debilitating parkinsonian-like tremors associated with long-term use of "typical" medication are also associated with "atypical" drugs, so this designation may be irrelevant. 
+	
+	Additionally, while these medications are often effective at reducing psychoses, they only substantially decrease psychotic symptoms about half the time \color{red}(cite!!)\color{black} and fail to alleviate negative symptoms. Much of the administering of antipsychotics has to do with the historical culture surrounding "the patient": typical antipsychotics made behavior much more manageable, with patients showing decreased aggression. Without psychotic delusions, patients also become more relatable, perhaps also appealing on a visceral level to medical staff. 
+	%awkwardly worded
+	%(Question!! Does antipsychotic medication worsen negative symptoms of schizophrenia? This might be a neurologist question. Maybe research a text abt dopamine receptors?)
+
+	It hasn't been until recently that pharmaceutical development has turned its attention specifically to these negative symptoms. Second-generation antipsychotics were marketed as reducing them, but long-term studies have shown that they fail to provide positive outcomes for the patient \color{red}(citation needed)\color{black}. 
+	
+	Vitamin C 
+	
+	Anti-inflammatory medication 
+	
+	Omega-3s
+	
+	\section{Genetics}
+	Physiologically, schizophrenia is poorly understood. The search for genetic markers has been difficult, despite its risk heritability of about 83\% (Cannon, 1998). It is highly heterogenous: an estimated 9,000 genes are associated with the disease, while approximately 6,000 have been characterized across 108 loci through genome wide association studies (Schizophrenia Working Group Consortium, 2014). No causal genes have been found, although potential candidates include genes involved in dopamine and glutamine signaling, ion transport channels, $\beta$-lymphocytes, and neurogenesis. The nature of neuron development and function and the implications of the potential effects that mosaicism has on the phenotypic expression of the disease leads to a very complicated problem, with no clear models. 
+	
+	As a complex disease, schizophrenia has a "missing heritability" problem. The issue of missing heritability is where genome-wide association studies cannot account for enough genomic variation to explain high heritabilities (Eichler et al, 2010). Multiple things account for this: GWAS only look at SNPs, and fail to account for more complex structural variants. Rare variants are collectively frequent, and making GWAS sensitive enough to detect rare variants allows too much noise for them to be differentiable from random mutations. Also, GWAS data do not account for complex genetic interactions, so a gene that may not be significant when mutated by itself might be highly significant when one of the genes it interacts with is also mutated.  
+	
+	When SNPs are organized into interacting networks and paired with phenotypic data, schizophrenia emerges as a syndromic disease, a set of similar symptoms that are the result of several different underlying physiological causes. Recent data analysis involving grouping of interacting SNP sets and phenotypic clusters suggests 8 different classifications of schizophrenia (Arnedo, 2015). This is an elegant explanation that unites several prevailing theories of schizophrenia: neurodevelopmental disruption, autoimmune effects, glutamate signaling disruption, dopamine signaling disruption, and oxidative stress-induced apoptosis.  
+	
+	\section{Physiology}
+	The current model of schizophrenia involves the disruption of two primary neurotransmitters: glutamate and dopamine. As mentioned above, the positive symptoms of schizophrenia are associated with an overaccumulation of dopamine in the nucleus accumbens, triggering overactivity. Inversely, the negative symptoms are associated with a relative lack of dopamine in the prefrontal cortex. Glutamate is associated with the release of both of these neurotransmitters. 
+	
+	There are several theories as to why these signaling circuits become disrupted in the first place. 
+	
+		A newly emerging argument is that schizophrenia is a neurodevelopmental disorder, a phenotype that begins mildly in early childhood and continues until the final development stage in the prefrontal cortex limits neuroplasticity, causing compensatory activity that silenced schizophrenic symptoms to cease in early adulthood (Insel, 2010). Lots of evidence supports this hypothesis: dopamine signaling increases markedly in the prefrontal cortex during adolescence, potentially triggering psychotic symptoms. Many genes found to be significantly associated with this disease are involved in neurogenesis, embryonic development, and cell proliferation and differentiation. 
+		
+		%the above paragraph offers no mechanistic explanation. Expand (find out!) about neurotypical development, and then expand on how scz may differ. 
+		
+		Another factor is the effect of \textit{in utero} infection on neuronal development. This is innately tied in with the theory of immune system involvement in pathogenesis. Cytokines, a broad class of small proteins involved in cellular signaling, have been shown to be significantly increased during the second and third trimester in mothers of people who later develop schizophrenia (Brown, 2010). Distinct from hormones, cytokines are especially important as an immunomodulating agent, and are typically found in picomolar concentrations except during trauma or infection, making elevated levels of cytokines particularly significant in a pathogenesis model. In particular, interluekin-6 (IL-6) has been shown to alter fetal brain development through epigenetic modification of neurons. The possible causative effect of this in schizophrenia is the hypermethylation and subsequent repression of glutamate decarboxylase, an enzyme that serves as a key step in glutamate and GABA degradation and synthesis (Kundakovic, 2008). 
+		%this last sentence might be too specific for the introduction
+		
+	However, most of the associations between autoimmune effects and schizophrenia are epidemiological. There are three major points of evidence for immune system involvement in schizophrenia: SCZ is highly associated with maternal infection during pregnancy, anti-inflammatory drugs cause better patient outcomes, and several genes detected by GWAS are implicated in the immune system (Carter \textit{et al.}, 2014). 
+	
+	Additionally, there is a well-documented type of encephalitis, or brain swelling, that is known to cause psychosis. Often, the immune system is found to produce antibodies to NMDA receptors, gamma-aminobutyric A receptors, and voltage-gated ion channels, which are all physiological structures associated with schizophrenia. However, only a very small proportion of patients in a single have been shown to have NMDAR antibodies (Deakin, 2014). The proinflammatory cytokine IL-6 has been shown to be associated with first-incident psychotic episodes in schizophrenia, ...
+	
+	% [goals for when we return, dear reader: read the recently downloaded articles, see if you can find the presence of NMDAR (or other receptor) antibodies in other scz patients in other studies, something something cytokines] 
+	
+	There is no conclusive evidence that psychosis in schizophrenia is caused by an immunological disorder. 
+	
+	Oxidative stress: ...
+	
+	\section{Towards a Better Model}
+	Theory: SCZ is a disease of inappropriate synaptic pruning, which can be due to C4 expression mutations, or something else further upstream that triggers overexpression of C4. Possible transcription factors include: GR (glucocorticoid receptor? P04150) and its two isoforms, HSF1 (long and short) (heat shock factor protein Q00613), Arnt (P27540), AP-1 (adaptor protein 1 complex, forms c-Jun, Q9BXS5), c-Jun (widely expressed tf, P05412), Max1, and Max (P61244). "relevant tf's" from qiagen
+	Prevailing theory for connection of positive and negative symptoms? How would CC4 expression differential cause positive symptoms? 
+	%maybe this is just a random thought, but would the syndromicity of schizophrenia lead to completely irrelevant statistical results & analysis? ie so many studies are split into categories of "we show increased levels, we showed nothing, we showed decreased levels"
+	%"several studies have documented alterations in x, y, or z in schizophrenia, but this is not always consistent" 
+	Schizophrenia is a complex disorder, and genome-wide association studies (GWAS) fail to account for a large portion of the variability. GWAS alone are more than likely insufficient to determine the physiological underpinnings of the disorder, given its syndromic nature. Additionally, the diagnostic aspect of schizophrenia is relatively subjective, with a scattered distribution of severity and symptoms. 
+	%can expand on the lack of gwas data
+	
+	If it truly is a syndromic illness, then the disease can be separated into groups of different physiological disruptions, and potentially groups of discrete psychological symptoms. The combination of genotypic and phenotypic data into a single model is a recent strategy that presents a robust argument for the existence of several different genotypic networks underlying a handful of distinct clinical symptoms (Arnedo \textit{et al.}, 2015). This type of network analysis presents a more biologically relevant model than GWAS data by itself; the previously cited study found that the interactive genotypic networks account for more variability than SNP data does alone. They similarly found a high level of correlation, with about 90\% of their SNP sets corresponding to a risk factor of 66\% or greater. %(find citation for GWAS data for comparison) 
+	
+	Moving one step up from genomic data, looking at disruptions in transcribed proteins, specifically signaling pathways, can provide a physiological underpinning to psychological symptoms. Protein signaling pathways are chains of intercellular biochemical events that begin with an external stimulus and typically end with a change in genetic expression through a transcription factor. Here, I calculate signaling pathways using a set of data called an \textit{interactome}, a conglomeration of a large majority of protein interactions inside a human cell. This data is organized as a directed graph. A directed graph is a mathematical construct which, in this case, is akin to a tree: the chosen start point is at the top, with possible interacting proteins branching off of it in a downwards cascade of events (fig. 1 forthcoming). 
+
+This is a useful way to model a disease because many complex heterogenous diseases can be unified into a set of disrupted signaling paths. Notably, this has been applied to cancer genomics in the search for so-called \textit{driver mutations}, which provides a useful analogy to my methodology. Driver mutations are mutations that cause cancer - as opposed to passenger mutations, which just happen to become mutated due to the high rate of mutation of cancer cells and bear no actual biological relevance to tumorigenesis. A genome-wide association study that only looks at mutated genes sees hundreds of different types of tumor mutation profiles, many with relatively low frequency. However, a pathway model is able to synthesize these mutated genes into a model of pathway disruption. If, say, a signaling pathway related to cell division has twelve different proteins in it, all of which are associated with mutated genomic data from cancer, what was previously a dozen disparate data points now becomes a single unified pathway (Vandin, 2012). 
+%this might be too much detail 
+
+Schizophrenia research may also benefit from this type of modeling. Its heterogeneity is well-established, and evidence for its syndromicity is growing. Here, I argue for a pathway-based model of schizophrenia based on generated pathway data mapped to GWAS gene sets. Using PathLinker software, I compute \textit{k} number of proteins downstream of handpicked target receptors known to be highly associated with schizophrenia, such as DRD2 (Ritz \textit{et al.}, 2015). These proteins are then mapped onto GWAS data from the Psychiatric Genetics Consortium (PGC) to assess for coverage. If a large number of proteins correspond to mutated genomic data, especially if protein sets stemming from different starting receptors are able to account for different gene sets in the GWAS, this method will present a strong argument for a pathway analysis of schizophrenia.
+	
+%	arguments for clinic reclassification of scz: 
+%	evidence for syndromic model: 
+%	error associated with subjective psychiatric diagnoses and objective genomic data: 
+%	
+%	A pathway model of schizophrenia allows for a more complete model of the disease, as it unifies diverse genetic mutations into a single category of disruption. 
+	
+\chapter{Causes of Neurological Disruption}
+    	\section{Genomic mutations cause predisposition to disease phenotype}
+	\section{Immunological effects of disease}
+	\section{Developmental effects}
+		\begin{description}
+		\item this might be the same as immunological effects
+		\item L1 retrotransposons show increased activity in neurogenesis under certain maternal conditions
+				  These preferentially land in loci known to be involved in neuronal signaling. 
+		\end{description}
+
+\chapter{Neuronal Signaling Pathways and their Relevance to Schizophrenia}
+	\section{Clustering of a syndromic illness into distinct categories}
+	\section{Healthy Signaling}
+	%Fundamentals of Neuroscience notes:
+	%!WARNING! A lot of the following sentences are copied from the book, direct replication is plaigaristic.  
+	%Microglia are supportive cells related to macrophages & monocytes, might recruit macrophages and other WBC into brain by endothelial signals during inflammation. 
+	%Interneurons are typical neurons conforming to the functional polarity rule that add response complexity by increasing convergence and divergence of information processing, act as excitatory or inhibitory "switches" in neural networks, and can act as pattern detectors and generators. 
+		\subsection{Glutamine}
+		\subsection{Dopamine}
+		\subsection{Inflammatory}
+	\section{Modeling of disruption}
+		\subsection{Materials and Methods}
+		Starting with DRD2 (receptor), and ending with (transcription factor), a pathway was calculated using PathLinker. This directed graph was then referenced against a list of loci whose mutations are known to be disrupted in schizophrenia. I have a feeling that there's a higher level 
+		\subsection{Inspecting the human interactome} 
+		A database of directed protein interactions in a human interactome was obtained from Anna Ritz. This was used to generate a list of all proteins affected by a target protein, outputting UNIProt ID. The results were translated into common names using a database obtained from HGNC (HUGO Gene Nomenclature Committee), accessed September 24th, 2015. 
+		\subsection{GWAS data}
+		GWAS data was downloaded from the Psychiatric Genomics Consortium on January 25th, 2016. (http://www.med.unc.edu/pgc/downloads)
+		SNP data was processed using NCBI's dbSNP, and each one's location was downloaded on Jan. 29th, 2016. 
+		A list of genes by location was found using Ensembl's BioMart. Feb 3rd 2016
+		A better list of genes by location was downloaded from UCSC's table browser. Feb 8th 2016 
+		A list of receptors and transcription factors was hand-curated from the PCG significant SNPs list and inputted through PathLinker. The first 100 shortest paths showed a single significant receptor and two transcription factors, GRM3 (metabotropic glutamate receptor) and NFATC3 and PAK6. (initial PCG common names on graphspace) This preliminary result shows a strong implication for the MAPK/ERK signaling pathway, and link the glutamate receptor to a transcription factor involved in cytokine expression. 
+		\subsection{Results}
+	
+ 
+%\subsection{Footnotes and Endnotes}
+%	You might want to footnote something.\footnote{footnote text} Be sure to leave no spaces between the word immediately preceding the footnote command and the command itself. The footnote will be in a smaller font and placed appropriately. Endnotes work in much the same way. More information can be found about both on the CUS site.
+%	
+%\section{Bibliographies}
+%	Of course you will need to cite things, and you will probably accumulate an armful of sources. This is why BibTeX was created. For more information about BibTeX and bibliographies, see our CUS site (\url{web.reed.edu/cis/help/latex/index.html})\footnote{\cite{reedweb:2007}}. There are three pages on this topic: {\it bibtex} (which talks about using BibTeX, at \url{/latex/bibtex.html}), {\it bibtexstyles} (about how to find and use the bibliography style that best suits your needs, at \url{/latex/bibtexstyles.html}) and {\it bibman} (which covers how to make and maintain a bibliography by hand, without BibTeX, at at \url{/latex/bibman.html}). The last page will not be useful unless you have only a few sources. There used to be APA stuff here, but we don't need it since I've fixed this with my apa-good natbib style file.
+%	
+%\subsection{Tips for Bibliographies}
+%\begin{enumerate}
+%\item Like with thesis formatting, the sooner you start compiling your bibliography for something as large as thesis, the better. Typing in source after source is mind-numbing enough; do you really want to do it for hours on end in late April? Think of it as procrastination.
+%\item The cite key (a citation's label) needs to be unique from the other entries.
+%\item When you have more than one author or editor, you need to separate each author's name by the word ``and'' e.g.\\ \verb+Author = {Noble, Sam and Youngberg, Jessica},+.
+%\item Bibliographies made using BibTeX (whether manually or using a manager) accept LaTeX markup, so you can italicize and add symbols as necessary.
+%\item To force capitalization in an article title or where all lowercase is generally used, bracket the capital letter in curly braces.
+%\item You can add a Reed Thesis citation\footnote{\cite{noble:2002}} option. The best way to do this is to use the phdthesis type of citation, and use the optional ``type'' field to enter ``Reed thesis'' or ``Undergraduate thesis''. Here's a test of Chicago, showing the second cite in a row\footnote{\cite{noble:2002}} being different. Also the second time not in a row\footnote{\cite{reedweb:2007}} should be different. Of course in other styles they'll all look the same.
+%\end{enumerate}
+%
+%\chapter*{Conclusion}
+%         \addcontentsline{toc}{chapter}{Conclusion}
+%	\chaptermark{Conclusion}
+%	\markboth{Conclusion}{Conclusion}
+%	\setcounter{chapter}{4}
+%	\setcounter{section}{0}
+%	
+%Here's a conclusion, demonstrating the use of all that manual incrementing and table of contents adding that has to happen if you use the starred form of the chapter command. The deal is, the chapter command in \LaTeX\ does a lot of things: it increments the chapter counter, it resets the section counter to zero, it puts the name of the chapter into the table of contents and the running headers, and probably some other stuff. 
+%
+%So, if you remove all that stuff because you don't like it to say ``Chapter 4: Conclusion'', then you have to manually add all the things \LaTeX\ would normally do for you. Maybe someday we'll write a new chapter macro that doesn't add ``Chapter X'' to the beginning of every chapter title.
+%
+%    \appendix
+%      \chapter{The First Appendix}
+%      \chapter{The Second Appendix, for Fun}
+%
+%
+%%This is where endnotes are supposed to go, if you have them.
+%%I have no idea how endnotes work with LaTeX.
+%
+%  \backmatter % backmatter makes the index and bibliography appear properly in the t.o.c...
+%
+%% if you're using bibtex, the next line forces every entry in the bibtex file to be included
+%% in your bibliography, regardless of whether or not you've cited it in the thesis.
+ \nocite{*}
+%
+%% Rename my bibliography to be called "Works Cited" and not "References" or ``Bibliography''
+ \renewcommand{\bibname}{Works Cited}
+%
+ \bibliographystyle{bsts/mla-good} % there are a variety of styles available; 
+ 
+%%  \bibliographystyle{plainnat}
+%% replace ``plainnat'' with the style of choice. You can refer to files in the bsts or APA 
+%% subfolder, e.g. 
+% \bibliographystyle{APA/apa-good}  % or
+% \bibliography{thesis}
+% % Comment the above two lines and uncomment the next line to use biblatex-chicago.
+% %\printbibliography[heading=bibintoc]
+
+% Finally, an index would go here... but it is also optional.
+
+\end{document}
